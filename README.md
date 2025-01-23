@@ -52,22 +52,22 @@ We use the pre-trained models utilized by SBERT:
 
 This project contains three code files. The only difference among them is the type of blocking algorithm being used. As an example, we will demonstrate how to use the `use_lsh_block.ipynb` file.
 
-### Step 1: Modify Proxy and API Key
+### Step 1: Modify API Key
 
 To connect to GPT, you need to configure your proxy and set your `api_key`. Open the notebook and locate the following lines:
 
 ```python
 import os
 
-os.environ["http_proxy"] = "http://localhost:7890"
-os.environ["https_proxy"] = "http://localhost:7890"
+os.environ["http_proxy"] = "proxy address"
+os.environ["https_proxy"] = "proxy address"
 
 client = OpenAI(
     api_key="your api key"
 )
 ```
 
-Replace `"http://localhost:7890"` with your proxy address if needed, and replace `"your api key"` with your actual OpenAI API key.
+Replace `"proxy address"` with your proxy address if needed, and replace `"your api key"` with your actual OpenAI API key.
 
 ### Step 2: Update File Paths
 
