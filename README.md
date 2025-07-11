@@ -1,5 +1,5 @@
 # Project
-the source code and datasets for our paper “In-context Clustering-based Entity Resolution with Large Language Models: A Design Space Exploration”
+the source code and datasets for our paper “In-context Clustering-based Entity Resolution with Large Language Models: A Design Space Exploration” (SIGMOD26)
 
 # Requirements
 -------
@@ -59,9 +59,6 @@ To connect to GPT, you need to configure your proxy and set your `api_key`. Open
 ```python
 import os
 
-os.environ["http_proxy"] = "proxy address"
-os.environ["https_proxy"] = "proxy address"
-
 client = OpenAI(
     api_key="your api key"
 )
@@ -88,5 +85,19 @@ Once the necessary modifications are made:
 1. Open the Jupyter Notebook file (e.g., `use_lsh_block.ipynb`).
 2. Execute the notebook cells sequentially.
 3. Wait for the results to be generated.
----------
+
+# Citation
+
+If you are interested in our work, you can cite our paper❤
+
+```tex
+@article{LLMCER-SIGMOD2026,  
+	author={Jiajie Fu and Haitong Tang and Arijit Khan and Sharad Mehrotra and Xiangyu Ke and Yunjun Gao}, 
+    title={In-context Clustering-based Entity Resolution with Large Language Models: A Design Space Exploration},  
+    journal={Proceedings of the ACM on Management of Data (SIGMOD)}, 
+    year = {2026}    
+}
+```
+
+
 
